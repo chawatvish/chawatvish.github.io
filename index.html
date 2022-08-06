@@ -1,24 +1,578 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" type="image/png" href="./asset/image/favicon.png"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chawatvish - Portfolio</title>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- SEO Meta -->
+    <meta name="author" content="Chawatvish" />
+    <meta name="description" content="Chawatvish Portfolio" />
+    <meta name="keywords" content="Developer, Portfolio, HTML, CSS, JS" />
 
-    <title>{ Chawatvish Worrapoj }</title>
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/all.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <script src="./assets/js/repo-card.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Animation-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <body>
+    <!-- <div id="progress">
+      <span id="progress-value"></span>
+    </div> -->
+
+    <section>
+      <div class="container">
+        <div id="top" class="page-scroll"></div>
+        <!-- Navbar -->
+        <header>
+          <a href="#top" class="logo">Chawatvish</a>
+          <ul>
+            <li><a class="active page" href="#top" id="home-btn">Home</a></li>
+            <li><a href="#about" class="page" id="about-btn">About Me</a></li>
+            <li>
+              <a href="#experience" class="page" id="experience-btn"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="page" id="project-btn">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="enabledisable page" id="contact-btn"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+          <div class="column">
+            <h2 data-aos="fade-down" data-aos-duration="1000">
+              Hi all, I'm Chawatvish<span class="wave">👋</span>
+            </h2>
+            <p data-aos="fade-right" data-aos-duration="1000">
+              I love software development, mobile application both of iOS and
+              Android. <br />
+              I know a little bit of Web Dev, Flutter and Machine learning! Want
+              to discuss regarding any project or just want to say a Hi? I am
+              always available to listen you :)
+            </p>
+            <a
+              href="mailto:chawatvish.wo@gmail.com"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              >Contact Me</a
+            >
+            <a
+              href="/assets/file/resume.pdf"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              >Resume</a
+            >
+          </div>
+          <div class="img">
+            <img
+              src="./assets/Vector 10.png"
+              class="shape"
+              style="top: 5rem; right: 15rem"
+              alt="Vector 10"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+            <img
+              src="./assets/Vector 11.png"
+              class="shape"
+              style="height: 8rem; width: 8rem; top: 8rem; right: 20rem"
+              alt="Vector 10"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+            <img
+              src="./assets/Vector 16.png"
+              class="shape"
+              style="height: 8rem; width: 8rem; top: 8rem; right: 15rem"
+              alt="Vector 10"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+            <img
+              src="./assets/Vector 10.png"
+              class="shape"
+              style="z-index: 1; top: 23rem; right: 9rem"
+              alt="Vector 10"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+            <img
+              src="./assets/Vector 27.png"
+              class="shape"
+              style="
+                z-index: 1;
+                height: 8rem;
+                width: 8rem;
+                top: 25rem;
+                right: 13rem;
+              "
+              alt="Vector 10"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+            <img
+              src="./assets/Vector 11.png"
+              class="shape"
+              style="
+                z-index: 1;
+                height: 4rem;
+                width: 4rem;
+                top: 26rem;
+                right: 9rem;
+              "
+              alt="Vector 10"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+            <img
+              src="./assets/APS-OCTOCAT.png"
+              alt="APS-OCTOCAT"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            />
+          </div>
+        </div>
+
+        <!-- 2nd Section -->
+        <div
+          id="about"
+          class="content page-scroll"
+          style="justify-content: space-around"
+        >
+          <div class="img" data-aos="fade-right" data-aos-duration="1000">
+            <img
+              src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif"
+              alt="APS-OCTOCAT"
+            />
+          </div>
+          <div class="column-2">
+            <svg
+              xmlns="//www.w3.org/2000/svg"
+              version="1.1"
+              class="svg-filters"
+              style="display: none"
+            >
+              <defs>
+                <filter id="marker-shape">
+                  <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0 0.15"
+                    numOctaves="1"
+                    result="warp"
+                  />
+                  <feDisplacementMap
+                    xChannelSelector="R"
+                    yChannelSelector="G"
+                    scale="30"
+                    in="SourceGraphic"
+                    in2="warp"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <h2 style="font-weight: 550">
+              <span class="low-highlight-pink">What I do</span>
+            </h2>
+            <h3 style="font-size: 24px; color: #444444; font-weight: 1">
+              Love to code mobile app, RestfulAPI and little data analytic.
+            </h3>
+            <div class="dev-icons">
+              <ul>
+                <li class="software-skill-inline apple">
+                  <i class="devicon-apple-plain"></i>
+                  <p>iOS</p>
+                </li>
+                <li class="software-skill-inline android">
+                  <i class="devicon-android-plain"></i>
+                  <p>Android</p>
+                </li>
+                <li class="software-skill-inline flutter">
+                  <i class="devicon-flutter-plain"></i>
+                  <p>Flutter</p>
+                </li>
+                <li class="software-skill-inline python">
+                  <i class="devicon-python-plain"></i>
+                  <p>Python</p>
+                </li>
+                <li class="software-skill-inline firebase">
+                  <i class="devicon-firebase-plain"></i>
+                  <p>Firebase</p>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p style="color: #444444; font-size: 20px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/technologist-medium-skin-tone_1f9d1-1f3fd-200d-1f4bb.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Full time job in Financial sector company. Develop mobile
+                banking app in Thailand and Regional.
+              </p>
+              <p style="color: #444444; font-size: 20px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/writing-hand_medium-skin-tone_270d-1f3fd_1f3fd.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Blog on <a href="https://cwstory.com/"> Medium </a> to share my
+                knowledge and experience.
+              </p>
+              <p style="color: #444444; font-size: 20px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Side projects on
+                <a
+                  href="https://fastwork.co/user/chawatvish/mobile-application-96557276?source=my_services"
+                  >Fastwork</a
+                >
+                and
+                <a href="https://www.upwork.com/freelancers/~011c4537d1bf6a3d36"
+                  >Upwork</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd Section -->
+        <h2
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          id="experience"
+          class="mob-h2 page-scroll"
+          style="
+            font-size: 56px;
+            font-weight: 700;
+            margin-top: 50px;
+            text-align: center;
+          "
+        >
+          <span class="low-highlight-skin">Experience</span>
+        </h2>
+
+        <div class="experience-cards-div">
+
+          <!-- PowerMatic -->
+          <div
+            class="experience-card"
+            data-aos="fade-right"
+            data-aos-duration="2500"
+          >
+            <div class="experience-banner" style="background: #8F2544">
+              <div class="experience-blurred_div"></div>
+              <div class="experience-div-company">
+                <!-- Power matic bannder -->
+              </div>
+              <img
+                crossorigin="anonymous"
+                class="experience-roundedimg"
+                src="./assets/powermatic_logo.png"
+                alt="Powermatic"
+              />
+            </div>
+            <div class="experience-text-details">
+              <h5 class="experience-text-role">Backend Developer</h5>
+              <h5 class="experience-text-date">Aug 2016 – Dec 2016</h5>
+              <p class="subTitle experience-text-desc">
+                Joined as a C# backend developer. Create RestfulAPI service for vehicle GPS tracking and report to
+                Department of Land Transport (DLT).
+              </p>
+            </div>
+          </div>
+
+          <!-- SAMART -->
+          <div
+            class="experience-card"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div
+              class="experience-banner"
+              style="background: #109BAE"
+            >
+              <div class="experience-blurred_div"></div>
+              <div class="experience-div-company">
+                <!-- SVG Banner -->
+              </div>
+              <img
+                crossorigin="anonymous"
+                class="experience-roundedimg"
+                src="./assets/smart_logo.png"
+                alt="Samart"
+              />
+            </div>
+            <div class="experience-text-details">
+              <h5 class="experience-text-role">Mobile Developer</h5>
+              <h5 class="experience-text-date">Jan 2017 – Nov 2018</h5>
+              <p class="subTitle experience-text-desc">
+                Joined as a mobile developer. Develop new apps and maintain
+                existing app such as
+                <a href="https://www.trippointz.com/">TripPointZ</a> and
+                <a href="https://www.edtguide.com/"> EDT Guide</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- KBTG -->
+          <div
+            class="experience-card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div class="experience-banner" style="background: #444941">
+              <div class="experience-blurred_div"></div>
+              <div class="experience-div-company">
+                <!-- width 86 , height 28 -->
+                <!-- SVG Banner -->
+              </div>
+              <img
+                crossorigin="anonymous"
+                class="experience-roundedimg"
+                src="./assets/kbtg_logo.png"
+                alt="KBTG"
+              />
+            </div>
+            <div class="experience-text-details">
+              <h5 class="experience-text-role">Advanced Software Engineer</h5>
+              <h5 class="experience-text-date">May 2021 – Present</h5>
+              <p class="subTitle experience-text-desc">
+                Joined in the new launch of
+                <a href="https://apps.apple.com/th/app/k-plus/id361170631"
+                  >K PLUS</a
+                >. Take response with Notification, Feed, Analytic tracker and
+                Upload Document. Then move to Regional team to make brand new
+                <a
+                  href="https://apps.apple.com/vn/app/k-plus-vietnam/id1586576195"
+                  >K PLUS of Regional</a
+                >
+                expansion. I'm working on Feed, QR reader, Upload Document and
+                Shared libs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th Section -->
+        <!-- <svg
+          xmlns="//www.w3.org/2000/svg"
+          version="1.1"
+          class="svg-filters"
+          style="display: none"
+        >
+          <defs>
+            <filter id="marker-shape">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0 0.15"
+                numOctaves="1"
+                result="warp"
+              />
+              <feDisplacementMap
+                xChannelSelector="R"
+                yChannelSelector="G"
+                scale="30"
+                in="SourceGraphic"
+                in2="warp"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <h2
+          id="projects"
+          class="mob-h2 page-scroll"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-cyan">Projects</span>
+        </h2>
+        <div class="projects" data-aos="fade-up" data-aos-duration="1500">
+          
+        </div> -->
+
+        <!-- 5th Section -->
+        <!-- <h2 style="font-size:56px; font-weight: 700; margin-top: 50px;"><span class="low-highlight-lightyellow">Achievements</span></h2>
+        <div class="achievement-cards-div">
+
+          <div class="certificate-card">
+            <div class="certificate-image-div">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/1200px-GSoC-icon.svg.png" alt="GSOC" class="card-image">
+            </div>
+            <div class="certificate-detail-div">
+              <h5 class="card-title">Google Summer of Code</h5>
+              <p class="card-subtitle">Selected in GSOC 2021</p>
+            </div>
+            <div class="certificate-card-footer">
+              <span class="certificate-tag">GSOC</span>
+              <span class="certificate-tag">2021</span>
+              <span class="certificate-tag">Google</span>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <div class="certificate-image-div">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/1200px-GSoC-icon.svg.png" alt="GSOC" class="card-image">
+            </div>
+            <div class="certificate-detail-div">
+              <h5 class="card-title">Google Summer of Code</h5>
+              <p class="card-subtitle">Selected in GSOC 2021</p>
+            </div>
+            <div class="certificate-card-footer">
+              <span class="certificate-tag">GSOC</span>
+              <span class="certificate-tag">2021</span>
+              <span class="certificate-tag">Google</span>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <div class="certificate-image-div">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/1200px-GSoC-icon.svg.png" alt="GSOC" class="card-image">
+            </div>
+            <div class="certificate-detail-div">
+              <h5 class="card-title">Google Summer of Code</h5>
+              <p class="card-subtitle">Selected in GSOC 2021</p>
+            </div>
+            <div class="certificate-card-footer">
+              <span class="certificate-tag">GSOC</span>
+              <span class="certificate-tag">2021</span>
+              <span class="certificate-tag">Google</span>
+            </div>
+          </div>
+
+        </div> -->
+
+        <h2
+          id="contact"
+          class="mob-connect enabledisable page-scroll"
+          style="font-size: 40px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-hazeskin">Connect with me</span>
+        </h2>
+        <ul class="socialsites">
+          <li>
+            <a href="https://github.com/chawatvish" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/chawatvish/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://cwstory.com/" target="_blank"
+              ><i class="fab fa-medium"></i
+            ></a>
+          </li>
+        </ul>
+
+        <!-- Footer -->
+      </div>
+    </section>
+    <div class="button-top-div" id="myDIV">
+      <a id="button-top" href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Page Scroll Percentage -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Page Scroll Up On Click -->
+    <script>
+      //scroller fixed
+      var scrolBtn = document.querySelector('#myDIV')
+      window.addEventListener('scroll', function () {
+        let offset
+        offset = window.pageYOffset
+        if (offset > 300) {
+          scrolBtn.style.display = 'block'
+        }
+        if (offset < 300) {
+          scrolBtn.style.display = 'none'
+        }
+      })
+
+      //remove that #s in the link
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          })
+        })
+      })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
