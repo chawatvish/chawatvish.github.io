@@ -3,9 +3,9 @@
 ############################
 
 author:
-  name: "Qubt"
-  image: author.jpeg
-  greeting: "A personal blog theme for Hugo :evergreen_tree:"
+  name: "Chawatvish Worrapoj"
+  image: author.jpg
+  greeting: "A software engineer who passionate about mobile applications"
   icon: ":wave:"
 
 ############################
@@ -13,22 +13,22 @@ author:
 ############################
 
 links:
-  - github: https://github.com/chrede88/qubt
+  - github: https://github.com/chawatvish
   # - gitlab: 
-  - facebook: https://github.com/chrede88/qubt
+  # - facebook: https://github.com/chrede88/qubt
   # - x-twitter:
   # - mastodon:
-  - linkedin: https://github.com/chrede88/qubt
-  - instagram: https://github.com/chrede88/L1nkr
+  - linkedin: http://linkedin.com/in/chawatvish/?ref=cwstory.com
+  # - instagram: https://github.com/chrede88/L1nkr
   # - reddit: 
   # - telegram: 
   # - whatsapp: 
   # - signal: 
   # - codepen: 
   # - dev: 
-  - email: https://github.com/chrede88/qubt
-  - website: https://github.com/chrede88/qubt
-  # - link: 
+  - email: mailto:chawatvish.wo@gmail.com
+  # - website: https://github.com/chrede88/qubt
+  - link: https://fastwork.co/user/chawatvish/mobile-application-96557276?badges=&position=1&ref=cwstory.com
   # - discord:
   # - orcid:
   # - slack:
@@ -54,7 +54,7 @@ links:
   # - strava: 
   # - untappd: 
   # - skype: 
-  # - medium: 
+  - medium: https://chawatvish.medium.com 
   # - foursquare: 
   # - apple: 
   # - amazon: 
@@ -66,7 +66,7 @@ links:
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: "Qubt Theme"
-description: "Demo site build with Qubt & Hugo"
+title: "CWStory.com"
+description: "I am iOS developer who love to sharing my knowledge about iOS Android and Flutter application books self improvement and financial. Enjoy with my content"
 images:
-  - thumbnail.jpeg
+  - thumbnail.png
