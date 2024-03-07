@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My services on CWStory.com</title>
+    <link>http://localhost:1313/services/</link>
+    <description>Recent content in My services on CWStory.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS App Development</title>
+      <link>http://localhost:1313/services/ios/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/ios/</guid>
+      <description>I offer full-cycle iOS app development, turning your concept into a reality on the App Store. With my tech expertise, your app will thrive. Let&amp;rsquo;s make it happen!</description>
+    </item>
+  </channel>
+</rss>

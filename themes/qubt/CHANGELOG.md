@@ -6,6 +6,47 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.2.7] - 2024-02-18
+
+### Fixed
+- Fixed issue where assets wouldn't be picked up unless placed in the top level folder
+
+### Go
+- Support for Go v1.22.0
+
+# [1.2.6] - 2024-01-26
+
+### Hugo
+- Support for Hugo v0.122.0
+
+# [1.2.5] - 2024-01-21
+
+### Changed
+- Fixed issue where `pre` blocks would overflow the set max width.
+- Fixed issue where blog card headlines would overflow.
+- Changed how content on the homepage is aligned.
+
+### Go
+- Added support for go v1.21.6
+
+# [1.2.4] - 2024-01-06
+
+### Hugo
+- Support for Hugo v0.121.2
+
+# [1.2.3] - 2023-12-25
+
+### Fixed
+- feature image processing
+
+### Changed
+- increased processed image qualiaty
+
+## [1.2.2] - 2023-12-23
+
+### Changed
+- updating Bluesky icon
+
 ## [1.2.1] - 2023-12-18
 
 ### Changed
@@ -42,7 +83,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.1...HEAD
+[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.6...HEAD
+[1.2.6]: https://github.com/Chrede88/qubt/releases/compare/v1.2.5...v1.2.6
+[1.2.5]: https://github.com/Chrede88/qubt/releases/compare/v1.2.4...v1.2.5
+[1.2.4]: https://github.com/Chrede88/qubt/releases/compare/v1.2.3...v1.2.4
+[1.2.3]: https://github.com/Chrede88/qubt/releases/compare/v1.2.2...v1.2.3
+[1.2.2]: https://github.com/Chrede88/qubt/releases/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/Chrede88/qubt/releases/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/Chrede88/qubt/releases/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/Chrede88/qubt/releases/compare/v1.1.1...v1.1.2

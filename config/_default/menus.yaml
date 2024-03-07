@@ -12,6 +12,9 @@ main:
 - name: Portfolio
   url: /portfolio/
   weight: 30
+- name: Blog
+  url: https://chawatvish.medium.com
+  weight: 40
 - name: About
   url: /about/
-  weight: 40
+  weight: 50

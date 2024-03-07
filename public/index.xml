@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CWStory.com</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on CWStory.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS App Development</title>
+      <link>http://localhost:1313/services/ios/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/ios/</guid>
+      <description>I offer full-cycle iOS app development, turning your concept into a reality on the App Store. With my tech expertise, your app will thrive. Let&amp;rsquo;s make it happen!</description>
+    </item>
+    <item>
+      <title>Portfolio 🗂️</title>
+      <link>http://localhost:1313/portfolio/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/</guid>
+      <description>2023 🐰 Wisdom Digital Agency - พัฒนาแอปพลิเคชั่นสำหรับทีมงานขายอสังหาริมทรัพย์ เพื่อตอบโจทย์ลูกค้าในการเพิ่มความน่าสนใจของข้อมูลอสังหาริมทรัพย์ สนใจติดต่อ https://wisdomstudio.co.th/ Nock Academy - แอปพลิเคชั่นการศึกษาที่สามารถดูการสอนสด การสอนย้อนหลัง และทำข้อสอบ ได้มีโอกาสเข้าไปร่วมแก้ไขและปรับปรุงประสิทธิภาพ 2022 🐯 MorOnline - แอปพลิเคชั่นดูแลสุขภาพครบวงจร ที่สามารถพบแพทย์แบบ video call ซื้อยาจากเภสัชกร หรือแม้กระทั้งจองคิวในการตรวจเลือดที่ห้อง lab เขียนบทความวิชาการเรื่อง &amp;ldquo;การจาแนกประเภทบทวิจารณ์ของผู้ใช้โมไบล์แอปพลิเคชันของธนาคาร&amp;rdquo; - เป็นการนำข้อมูลจากใน App Store, Play Store มาวิเคราะห์และใช้เครื่องมือทาง Machine learning มาจำแนก ( classification ) เพื่อช่วยให้งานในส่วนของ customer service ลดน้อยลง ใครสนใจบทความผมแปะลิ้งค์ไว้ด้านล่างนี้ครับ&#xA;Google Drive Speaker KBTG inspire 2 - เป็นงานเพื่อบอกเล่าถึงการทำงานในทีมของผม ปัจจุบันผมอยู่ในทีม Regional K Plus ซึ่งจะมีวิธีการทำงานที่แตกต่างในแต่ละแง่มุม อีกทั้งยังแชร์การทำ Common lib เพื่อให้นำไป reuse ใช้ต่อกันในองค์กร 2021 🐂 K Plus VN - แอปพลิเคชั่นสำหรับธนาคารกสิกรไทย ในประเทศเวียดนาม ได้เป็นส่วนร่วมในการขึ้นโครง และ บางฟีเจอร์ </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Summary CWStory is a digital journal of my life&amp;rsquo;s adventures,&#xA;inspired by my initials, CW, standing for Chawatvish Worrapoj.&#xA;It&amp;rsquo;s a platform where I document my personal journey and experiences, offering a glimpse into the moments that have defined me.&#xA;Propose I aim to share these stories with fellow developers and enthusiasts within our community, hoping that they may find inspiration, guidance, or simply enjoy the ride through the chapters of my life.</description>
+    </item>
+  </channel>
+</rss>
