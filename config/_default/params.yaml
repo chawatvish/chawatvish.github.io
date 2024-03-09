@@ -70,3 +70,8 @@ title: "CWStory.com"
 description: "I am iOS developer who love to sharing my knowledge about iOS Android and Flutter application books self improvement and financial. Enjoy with my content"
 images:
   - thumbnail.png
+
+sitemap:
+  changeFreq: ""
+  filename: sitemap.xml
+  priority: -1
