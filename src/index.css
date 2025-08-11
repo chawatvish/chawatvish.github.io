@@ -25,7 +25,12 @@
   .home-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 32px 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
   }
 
   .hero-section {
