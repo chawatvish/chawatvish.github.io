@@ -1,11 +1,21 @@
-# React + Vite
+# Chawatvish Worrapoj | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! I'm Chawatvish Worrapoj, a passionate mobile developer specializing in iOS and AI technologies.
 
-Currently, two official plugins are available:
+🌐 **Visit my website:** [chawatvish.github.io](https://chawatvish.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This site is built with React and Vite, and showcases my projects, skills, and contact information.
+
+---
+
+# Project Info
+
+This project uses React + Vite for fast development and HMR, with ESLint for code quality.
+
+## Useful Links
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc)
 
 ## Expanding the ESLint configuration
 
