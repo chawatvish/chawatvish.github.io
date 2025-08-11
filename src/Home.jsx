@@ -33,7 +33,7 @@ const Home = () => {
           Contact Me
         </a>
       </section>
-      {/* About Section */}}
+      {/* About Section */}
       <section className="about-section" id="about">
         <h2>About Me</h2>
         <p>
