@@ -1,4 +1,5 @@
 import React from 'react'
+import authorImg from './assets/author.jpg'
 import { TypeAnimation } from 'react-type-animation'
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <main className="home-container">
       {/* Hero Section */}
       <section className="hero-section">
+        <img src={authorImg} alt="Chawatvish Worrapoj" className="hero-image" />
         <h1>
           Hi, I'm{' '}
           <span
