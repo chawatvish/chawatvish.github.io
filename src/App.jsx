@@ -25,8 +25,7 @@ function App() {
       >
         <nav>
           <a
-            href="https://chawatvish.medium.com"
-            target="_blank"
+            href="https://cwstory.com"
             rel="noopener noreferrer"
             style={{
               color: darkMode ? '#fafafa' : '#18181b',
@@ -36,26 +35,42 @@ function App() {
               marginRight: 24
             }}
           >
-            Blog
+            CWStory
           </a>
         </nav>
-        <button
-          onClick={toggleDarkMode}
-          style={{
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: 32,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: 0
-          }}
-          aria-label="Toggle dark mode"
-          title="Toggle dark mode"
-        >
-          {darkMode ? <Moon size={32} /> : <Sun size={32} />}
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <a
+            href="https://chawatvish.medium.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: darkMode ? '#fafafa' : '#18181b',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: 18,
+              marginRight: 50
+            }}
+          >
+            Blog
+          </a>
+          <button
+            onClick={toggleDarkMode}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              fontSize: 32,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 0
+            }}
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            {darkMode ? <Moon size={32} /> : <Sun size={32} />}
+          </button>
+        </div>
       </header>
       <Home />
     </div>
