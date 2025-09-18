@@ -19,6 +19,10 @@ const Home = () => {
         <section id="about" className="scroll-mt-20">
           <AboutSection />
         </section>
+
+        <section id="work" className="scroll-mt-20">
+          <WorkExperienceSection />
+        </section>
         
         <section id="skills" className="scroll-mt-20">
           <SkillsSection />
@@ -26,10 +30,6 @@ const Home = () => {
         
         <section id="projects" className="scroll-mt-20">
           <ProjectsSection />
-        </section>
-        
-        <section id="work" className="scroll-mt-20">
-          <WorkExperienceSection />
         </section>
         
         <section id="contact" className="scroll-mt-20">
