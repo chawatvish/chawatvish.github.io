@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import 'tailwindcss';
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  --font-family: 'Urbanist', sans-serif;
+  --font-family: 'Nunito', sans-serif;
   --bg-light: #fafafa;
   --text-light: #18181b;
   --bg-dark: #18181b;
@@ -487,14 +487,27 @@
 }
 
 .dark .enhanced-skill-card {
-  background: rgba(255, 255, 255, 0.02);
-  border-left-color: currentColor;
+  background: rgba(35, 35, 42, 0.8) !important;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dark .enhanced-skill-card:hover {
+  background: rgba(35, 35, 42, 0.95) !important;
+  border-color: rgba(75, 85, 99, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 .enhanced-skill-card .skill-icon {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0;
   flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .enhanced-skill-card .skill-icon {
+    font-size: 18px;
+  }
 }
 
 .skill-content {
@@ -524,6 +537,11 @@
   font-weight: 400;
   line-height: 1.2;
   opacity: 0.8;
+}
+
+.dark .skill-details {
+  color: #bbb;
+  opacity: 0.9;
 }
 
 .dark .skill-details {
@@ -567,14 +585,14 @@
 .competency-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .competency-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 12px 0;
+  padding: 6px 0;
 }
 
 .competency-bullet {
@@ -590,6 +608,7 @@
   font-size: 15px;
   line-height: 1.5;
   flex: 1;
+  text-align: left;
 }
 
 .dark .competency-text {
@@ -598,7 +617,7 @@
 
 @media (min-width: 768px) {
   .competency-item {
-    padding: 16px 0;
+    padding: 8px 0;
   }
   
   .competency-text {
