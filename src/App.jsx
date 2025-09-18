@@ -39,20 +39,6 @@ function App() {
           </a>
         </nav>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          <a
-            href="https://chawatvish.medium.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              color: darkMode ? '#fafafa' : '#18181b',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: 18,
-              marginRight: 25
-            }}
-          >
-            Blog
-          </a>
           <button
             onClick={toggleDarkMode}
             style={{

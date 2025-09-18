@@ -3,6 +3,16 @@ import { TypeAnimation } from 'react-type-animation'
 import authorImg from '../assets/author.jpg'
 
 const HeroSection = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   return (
     <section className="hero-section">
       <img src={authorImg} alt="Chawatvish Worrapoj" className="hero-image" />
@@ -20,9 +30,9 @@ const HeroSection = () => {
       </h1>
       <h2>Mobile and AI Developer</h2>
       <p>Welcome to my portfolio website!</p>
-      <a href="https://x.com/chawatvish" className="cta-btn">
+      <button onClick={scrollToContact} className="cta-btn">
         Contact Me
-      </a>
+      </button>
     </section>
   )
 }
