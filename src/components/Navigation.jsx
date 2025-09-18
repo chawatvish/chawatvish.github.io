@@ -27,7 +27,7 @@ const Navigation = () => {
     <nav 
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/30 shadow-sm dark:shadow-gray-900/20"
       style={{
-        backgroundColor: theme === 'dark' ? '#23232a' : '#ffffff'
+        backgroundColor: theme === 'dark' ? '#1f2937' : '#ffffff'
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,7 +36,10 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-xl font-bold text-gray-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-200"
+              className="text-xl font-bold hover:text-emerald-600 dark:hover:text-emerald-300 transition-colors duration-200"
+              style={{
+                color: theme === 'dark' ? '#ffffff' : '#111827'
+              }}
             >
               Chawatvish
             </button>
@@ -49,10 +52,13 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-gray-600 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  className="hover:text-emerald-600 dark:hover:text-emerald-300 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  style={{
+                    color: theme === 'dark' ? '#ffffff' : '#374151'
+                  }}
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-600 dark:bg-emerald-400 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-600 dark:bg-emerald-300 group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
             </div>
@@ -64,7 +70,7 @@ const Navigation = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2.5 rounded-xl bg-gray-100/80 dark:bg-gray-800/80 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-emerald-600 dark:hover:text-emerald-400 border border-gray-200/50 dark:border-gray-700/50 transition-all duration-200 backdrop-blur-sm"
+              className="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-emerald-600 dark:hover:text-emerald-400 border border-gray-200 dark:border-gray-600 transition-all duration-200"
               aria-label="Toggle theme"
             >
               {theme === 'dark' ? (
@@ -78,7 +84,7 @@ const Navigation = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2.5 rounded-xl bg-gray-100/80 dark:bg-gray-800/80 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-emerald-600 dark:hover:text-emerald-400 border border-gray-200/50 dark:border-gray-700/50 transition-all duration-200 backdrop-blur-sm"
+                className="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-emerald-600 dark:hover:text-emerald-400 border border-gray-200 dark:border-gray-600 transition-all duration-200"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? (
@@ -97,14 +103,17 @@ const Navigation = () => {
             <div 
               className="px-3 pt-3 pb-4 space-y-2 border-t border-gray-200/50 dark:border-gray-700/30 backdrop-blur-xl"
               style={{
-                backgroundColor: theme === 'dark' ? '#23232a' : '#ffffff'
+                backgroundColor: theme === 'dark' ? '#1f2937' : '#ffffff'
               }}
             >
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-4 py-3 rounded-lg text-base font-medium text-gray-600 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-gray-100/80 dark:hover:bg-gray-800/60 transition-all duration-200"
+                  className="block w-full text-left px-4 py-3 rounded-lg text-base font-medium hover:text-emerald-600 dark:hover:text-emerald-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-200"
+                  style={{
+                    color: theme === 'dark' ? '#ffffff' : '#374151'
+                  }}
                 >
                   {item.label}
                 </button>

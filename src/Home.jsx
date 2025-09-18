@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <>
       <Navigation />
-      <main className="pt-25">
-        <section id="home">
+      <main>
+        <section id="home" className="pt-30">
           <HeroSection />
         </section>
         
