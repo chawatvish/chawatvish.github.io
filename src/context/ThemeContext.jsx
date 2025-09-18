@@ -9,8 +9,9 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode))
-    // Remove body class manipulation, let Tailwind handle it
+    // Apply dark class to both html and body for maximum compatibility
     document.documentElement.classList.toggle('dark', darkMode)
+    document.body.classList.toggle('dark', darkMode)
   }, [darkMode])
 
   const toggleDarkMode = () => setDarkMode((prev) => !prev)

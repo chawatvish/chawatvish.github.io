@@ -30,7 +30,15 @@
 
   body {
     overflow-x: hidden;
+    background: var(--bg-light);
+    color: var(--text-light);
     transition: var(--transition);
+  }
+
+  .dark body,
+  body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
   }
 }
 
