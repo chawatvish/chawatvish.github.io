@@ -9,13 +9,21 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode))
-    document.body.className = darkMode ? 'dark-mode' : ''
+    // Remove body class manipulation, let Tailwind handle it
+    document.documentElement.classList.toggle('dark', darkMode)
   }, [darkMode])
 
   const toggleDarkMode = () => setDarkMode((prev) => !prev)
+  const toggleTheme = toggleDarkMode // Alias for new API
+  const theme = darkMode ? 'dark' : 'light' // Convert to theme string
 
   return (
-    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+    <ThemeContext.Provider value={{ 
+      darkMode, 
+      toggleDarkMode, 
+      theme, 
+      toggleTheme 
+    }}>
       {children}
     </ThemeContext.Provider>
   )
