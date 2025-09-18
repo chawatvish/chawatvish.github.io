@@ -48,7 +48,7 @@ function App() {
               textDecoration: 'none',
               fontWeight: 600,
               fontSize: 18,
-              marginRight: 50
+              marginRight: 25
             }}
           >
             Blog
