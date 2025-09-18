@@ -735,6 +735,117 @@
   color: #aaa;
 }
 
+/* Enhanced Work Section Styles */
+.enhanced-work-item {
+  position: relative;
+  padding: 24px;
+  border-radius: var(--border-radius-sm);
+  background: var(--card-bg-light);
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.enhanced-work-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--shadow-hover);
+}
+
+.dark .enhanced-work-item {
+  background: var(--card-bg-dark);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.enhanced-work-item .work-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(to right, var(--gradient-primary)) padding-box,
+              var(--gradient-primary) border-box;
+  border-image: linear-gradient(to right, var(--gradient-primary)) 1;
+}
+
+.enhanced-work-item .work-title {
+  font-size: 20px;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.enhanced-work-item .work-company {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.dark .enhanced-work-item .work-company {
+  color: var(--text-dark);
+}
+
+.enhanced-work-item .work-period {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12px;
+  background: rgba(123, 228, 149, 0.1);
+  color: #329D9C;
+  border-radius: var(--border-radius-xs);
+  border: 1px solid rgba(123, 228, 149, 0.2);
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.dark .enhanced-work-item .work-period {
+  background: rgba(123, 228, 149, 0.15);
+  border-color: rgba(123, 228, 149, 0.3);
+}
+
+.enhanced-description {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--text-light) !important;
+  opacity: 0.8;
+}
+
+.dark .enhanced-description {
+  color: var(--text-dark) !important;
+}
+
+.work-bullet-point {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.work-bullet-point:last-child {
+  margin-bottom: 0;
+}
+
+.bullet-dot {
+  color: #329D9C;
+  font-weight: bold;
+  margin-right: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.work-bullet-point span:last-child {
+  flex: 1;
+}
+
+/* Add some spacing between work items */
+.work-list .enhanced-work-item + .enhanced-work-item {
+  margin-top: 32px;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Mobile First Approach */

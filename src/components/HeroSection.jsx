@@ -29,7 +29,7 @@ const HeroSection = () => {
         </span>
       </h1>
       <h2>Mobile and AI Developer</h2>
-      <p>Welcome to my portfolio website!</p>
+      <p>I help ideas become apps with iOS & Flutter, while exploring AI to push boundaries.</p>
       <button onClick={scrollToContact} className="cta-btn">
         Contact Me
       </button>

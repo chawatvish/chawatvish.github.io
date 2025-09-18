@@ -6,8 +6,8 @@ const AboutSection = () => {
       <div className="card">
         <h2 className="section-title">About Me</h2>
         <p className="section-text">
-          I am a passionate Mobile and AI Developer with a strong background in building innovative solutions. I love exploring new technologies and creating impactful products that make a difference.
-        </p>
+          I’m an experienced iOS and Flutter developer with 9 years in the field and a Master’s in Software Engineering. Beyond my role at a leading Thai bank, I enjoy sharing knowledge about mobile development, AI, and personal growth.
+          </p>
       </div>
     </section>
   )
