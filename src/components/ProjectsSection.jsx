@@ -35,9 +35,9 @@ const projects = [
   },
 ]
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project }) => {
   return (
-    <div className={`project-card-modern ${index % 2 === 0 ? 'project-card-left' : 'project-card-right'}`}>
+    <div className="project-card-modern">
       <div className="project-image-container">
         <img
           src={project.img}
@@ -58,6 +58,9 @@ const ProjectCard = ({ project, index }) => {
             <span key={i} className="tech-tag">{tech}</span>
           ))}
         </div>
+        <a href={project.link} className="project-link-bottom">
+          View Project →
+        </a>
       </div>
     </div>
   )
