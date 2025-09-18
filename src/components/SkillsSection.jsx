@@ -24,7 +24,7 @@ const skillCategories = [
   },
   {
     title: 'Engineering Practices & Tools',
-    icon: '�️',
+    icon: '⚙️',
     color: '#10b981',
     skills: [
       { name: 'Agile & CI/CD', details: 'Scrum, Jenkins, GitHub Actions', icon: '🚀', color: '#FF9500' },
