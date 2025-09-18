@@ -64,14 +64,14 @@
   border-radius: var(--border-radius);
   box-shadow: 0 4px 24px var(--shadow-light);
   padding: 48px 32px;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   text-align: center;
   transition: var(--transition);
 }
 
 .card-wide {
-  max-width: 1100px;
+  max-width: 900px;
 }
 
 body.dark-mode .card {
@@ -177,39 +177,103 @@ body.dark-mode .cta-btn {
 /* ===== SKILLS SECTION ===== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   justify-items: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Tablet: 3 columns */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 600px;
+  }
+}
+
+/* Desktop: 4 columns */
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    max-width: 700px;
+  }
+}
+
+/* Large Desktop: 5 columns */
+@media (min-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 28px;
+    max-width: 800px;
+  }
 }
 
 .skill-card {
   border-radius: 18px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  padding: 28px 0 18px 0;
-  width: 140px;
-  min-height: 110px;
+  padding: 20px 8px 16px 8px;
+  width: 100%;
+  max-width: 140px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: var(--transition-fast);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-light);
   cursor: pointer;
   position: relative;
 }
 
+/* Tablet and up: Larger skill cards */
+@media (min-width: 768px) {
+  .skill-card {
+    padding: 24px 12px 18px 12px;
+    min-height: 110px;
+    font-size: 17px;
+  }
+}
+
+/* Desktop and up: Full size skill cards */
+@media (min-width: 1024px) {
+  .skill-card {
+    padding: 28px 16px 18px 16px;
+    min-height: 110px;
+    font-size: 18px;
+  }
+}
+
 .skill-icon {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Tablet and up: Larger icons */
+@media (min-width: 768px) {
+  .skill-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop and up: Full size icons */
+@media (min-width: 1024px) {
+  .skill-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
 }
 
 .skill-name {
   text-align: center;
+  line-height: 1.2;
 }
 
 /* ===== MODERN PROJECTS GRID ===== */
@@ -602,10 +666,7 @@ body.dark-mode .work-description {
     padding: 10px 16px;
   }
   
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
+
   
   .section-text {
     font-size: 16px;
@@ -656,10 +717,7 @@ body.dark-mode .work-description {
     padding: 12px 20px;
   }
   
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
+
   
   .section-text {
     font-size: 18px;
@@ -699,10 +757,7 @@ body.dark-mode .work-description {
     font-size: 1.3rem;
   }
   
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
+
 }
 
 /* Desktop */
@@ -730,8 +785,5 @@ body.dark-mode .work-description {
     font-size: 1.5rem;
   }
   
-  .skills-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 28px;
-  }
+
 }
