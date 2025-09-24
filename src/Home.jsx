@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { trackPageView } from './utils/analytics'
 import Navigation from './components/Navigation'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
@@ -6,8 +7,12 @@ import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
 import WorkExperienceSection from './components/WorkExperienceSection'
 import ContactSection from './components/ContactSection'
+import AnalyticsDashboard from './components/AnalyticsDashboard'
 
 const Home = () => {
+  useEffect(() => {
+    trackPageView('portfolio_home');
+  }, []);
   return (
     <>
       <Navigation />

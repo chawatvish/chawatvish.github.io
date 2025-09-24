@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { useTheme } from '../context/useTheme';
+import { trackNavigation, trackButtonClick } from '../utils/analytics';
 
 const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
+    trackNavigation(sectionId);
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -69,7 +72,10 @@ const Navigation = () => {
 
             {/* Theme Toggle */}
             <button
-              onClick={toggleTheme}
+              onClick={() => {
+                trackButtonClick('theme_toggle', theme === 'dark' ? 'switch_to_light' : 'switch_to_dark');
+                toggleTheme();
+              }}
               className="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-emerald-600 dark:hover:text-emerald-400 border border-gray-200 dark:border-gray-600 transition-all duration-200"
               aria-label="Toggle theme"
             >

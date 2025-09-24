@@ -1,4 +1,5 @@
 import React from 'react'
+import { trackSkillInteraction } from '../utils/analytics'
 
 const skillCategories = [
   {
@@ -45,6 +46,7 @@ const professionalCompetencies = [
 
 const SkillCard = ({ skill }) => {
   const handleMouseEnter = (e) => {
+    trackSkillInteraction(skill.name, 'hover');
     e.currentTarget.style.transform = 'translateY(-4px) scale(1.03)'
     e.currentTarget.style.boxShadow = `0 6px 20px ${skill.color}33, 0 2px 8px rgba(0,0,0,0.10)`
   }
@@ -52,6 +54,10 @@ const SkillCard = ({ skill }) => {
   const handleMouseLeave = (e) => {
     e.currentTarget.style.transform = 'none'
     e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.06)'
+  }
+
+  const handleClick = () => {
+    trackSkillInteraction(skill.name, 'click');
   }
 
   return (
@@ -63,6 +69,7 @@ const SkillCard = ({ skill }) => {
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
     >
       <span className="skill-icon" style={{ color: skill.color }}>{skill.icon}</span>
       <div className="skill-content">

@@ -1,9 +1,15 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import { trackButtonClick } from '../utils/analytics'
 import authorImg from '../assets/author.jpg'
 
 const HeroSection = () => {
   const scrollToContact = () => {
+    trackButtonClick('cta', 'Contact Me', { 
+      source: 'hero_section',
+      action: 'scroll_to_contact'
+    });
+    
     const contactSection = document.getElementById('contact')
     if (contactSection) {
       contactSection.scrollIntoView({ 

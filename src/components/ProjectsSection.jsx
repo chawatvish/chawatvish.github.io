@@ -1,4 +1,5 @@
 import React from 'react'
+import { trackProjectClick } from '../utils/analytics'
 import project1 from '../assets/service1_photo1_card.jpg'
 import project2 from '../assets/service1_photo1.jpg'
 import project3 from '../assets/thumbnail.png'
@@ -36,6 +37,13 @@ const projects = [
 ]
 
 const ProjectCard = ({ project }) => {
+  const handleProjectClick = (source) => {
+    trackProjectClick(project.title, project.link, { 
+      source: source,
+      technologies: project.tech.join(', ')
+    });
+  };
+
   return (
     <div className="project-card-modern">
       <div className="project-image-container">
@@ -45,7 +53,11 @@ const ProjectCard = ({ project }) => {
           className="project-image-modern"
         />
         <div className="project-overlay">
-          <a href={project.link} className="project-link-modern">
+          <a 
+            href={project.link} 
+            className="project-link-modern"
+            onClick={() => handleProjectClick('overlay')}
+          >
             View Project →
           </a>
         </div>
@@ -58,7 +70,11 @@ const ProjectCard = ({ project }) => {
             <span key={i} className="tech-tag">{tech}</span>
           ))}
         </div>
-        <a href={project.link} className="project-link-bottom">
+        <a 
+          href={project.link} 
+          className="project-link-bottom"
+          onClick={() => handleProjectClick('bottom_link')}
+        >
           View Project →
         </a>
       </div>
