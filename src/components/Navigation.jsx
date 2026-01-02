@@ -1,33 +1,35 @@
-import { useState } from 'react';
-import { Sun, Moon, Menu, X } from 'lucide-react';
-import { useTheme } from '../context/useTheme';
-import { trackNavigation, trackButtonClick } from '../utils/analytics';
+import { useState } from 'react'
+import { Sun, Moon, Menu, X } from 'lucide-react'
+import { useTheme } from '../context/useTheme'
+import { trackNavigation, trackButtonClick } from '../utils/analytics'
 
 const Navigation = () => {
-  const { theme, toggleTheme } = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const scrollToSection = (sectionId) => {
-    trackNavigation(sectionId);
-    
-    const element = document.getElementById(sectionId);
+    trackNavigation(sectionId)
+
+    const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false); // Close mobile menu after clicking
+      element.scrollIntoView({ behavior: 'smooth' })
+      setIsMenuOpen(false) // Close mobile menu after clicking
     }
-  };
+  }
 
   const navItems = [
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'about', label: 'About', href: '#about' },
+    { id: 'philosophy', label: 'Philosophy', href: '#philosophy' },
     { id: 'work', label: 'Work', href: '#work' },
     { id: 'skills', label: 'Skills', href: '#skills' },
     { id: 'projects', label: 'Projects', href: '#projects' },
+    { id: 'resume', label: 'Resume', href: '#resume' },
     { id: 'contact', label: 'Contact', href: '#contact' }
-  ];
+  ]
 
   return (
-    <nav 
+    <nav
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/30 shadow-sm dark:shadow-gray-900/20"
       style={{
         backgroundColor: theme === 'dark' ? '#1f2937' : '#ffffff'
@@ -69,12 +71,14 @@ const Navigation = () => {
 
           {/* Right side - External link and theme toggle */}
           <div className="flex items-center space-x-4">
-
             {/* Theme Toggle */}
             <button
               onClick={() => {
-                trackButtonClick('theme_toggle', theme === 'dark' ? 'switch_to_light' : 'switch_to_dark');
-                toggleTheme();
+                trackButtonClick(
+                  'theme_toggle',
+                  theme === 'dark' ? 'switch_to_light' : 'switch_to_dark'
+                )
+                toggleTheme()
               }}
               className="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-emerald-600 dark:hover:text-emerald-400 border border-gray-200 dark:border-gray-600 transition-all duration-200"
               aria-label="Toggle theme"
@@ -106,7 +110,7 @@ const Navigation = () => {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div 
+            <div
               className="px-3 pt-3 pb-4 space-y-2 border-t border-gray-200/50 dark:border-gray-700/30 backdrop-blur-xl"
               style={{
                 backgroundColor: theme === 'dark' ? '#1f2937' : '#ffffff'
@@ -129,7 +133,7 @@ const Navigation = () => {
         )}
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

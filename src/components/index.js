@@ -1,9 +1,11 @@
 // Component exports for easier importing
-export { default as Navigation } from './Navigation';
-export { default as HeroSection } from './HeroSection';
-export { default as AboutSection } from './AboutSection';
-export { default as SkillsSection } from './SkillsSection';
-export { default as ProjectsSection } from './ProjectsSection';
-export { default as WorkExperienceSection } from './WorkExperienceSection';
-export { default as ContactSection } from './ContactSection';
-export { default as AnalyticsDashboard } from './AnalyticsDashboard';
+export { default as Navigation } from './Navigation'
+export { default as HeroSection } from './HeroSection'
+export { default as AboutSection } from './AboutSection'
+export { default as PhilosophySection } from './PhilosophySection'
+export { default as SkillsSection } from './SkillsSection'
+export { default as ProjectsSection } from './ProjectsSection'
+export { default as WorkExperienceSection } from './WorkExperienceSection'
+export { default as ContactSection } from './ContactSection'
+export { default as RequestResumeForm } from './RequestResumeForm'
+export { default as AnalyticsDashboard } from './AnalyticsDashboard'

@@ -9,6 +9,7 @@ This documentation outlines all the tracking events implemented in the portfolio
 All contact channel clicks are tracked with detailed information:
 
 #### Email Contact
+
 - **Event**: `contact_click` and `email_click`
 - **Triggered when**: User clicks "📧 Email Me" button
 - **Data captured**:
@@ -19,6 +20,7 @@ All contact channel clicks are tracked with detailed information:
   - `timestamp`: ISO timestamp
 
 #### Social Media Links
+
 - **Event**: `contact_click` and `{platform}_click`
 - **Triggered when**: User clicks any social media link
 - **Platforms tracked**:
@@ -36,6 +38,7 @@ All contact channel clicks are tracked with detailed information:
 ### Navigation Tracking
 
 #### Section Navigation
+
 - **Event**: `navigation_click`
 - **Triggered when**: User clicks navigation menu items
 - **Data captured**:
@@ -43,6 +46,7 @@ All contact channel clicks are tracked with detailed information:
   - `timestamp`: ISO timestamp
 
 #### Theme Toggle
+
 - **Event**: `button_click`
 - **Triggered when**: User toggles between light/dark theme
 - **Data captured**:
@@ -53,6 +57,7 @@ All contact channel clicks are tracked with detailed information:
 ### Call-to-Action Tracking
 
 #### Hero Section CTA
+
 - **Event**: `button_click`
 - **Triggered when**: User clicks "Contact Me" button in hero section
 - **Data captured**:
@@ -65,6 +70,7 @@ All contact channel clicks are tracked with detailed information:
 ### Project Interaction Tracking
 
 #### Project Clicks
+
 - **Event**: `project_click`
 - **Triggered when**: User clicks project links (overlay or bottom links)
 - **Data captured**:
@@ -77,6 +83,7 @@ All contact channel clicks are tracked with detailed information:
 ### Skills Interaction Tracking
 
 #### Skill Card Interactions
+
 - **Event**: `skill_interaction`
 - **Triggered when**: User hovers or clicks skill cards
 - **Data captured**:
@@ -87,6 +94,7 @@ All contact channel clicks are tracked with detailed information:
 ### Page Analytics
 
 #### Page Views
+
 - **Event**: `page_view`
 - **Triggered when**: User loads the homepage
 - **Data captured**:
@@ -96,7 +104,9 @@ All contact channel clicks are tracked with detailed information:
 ## 🛠️ Development Tools
 
 ### Analytics Dashboard (Development Only)
+
 A real-time analytics dashboard is available in development mode:
+
 - **Location**: Bottom-right corner (📊 button)
 - **Features**:
   - Live event tracking display
@@ -108,6 +118,7 @@ A real-time analytics dashboard is available in development mode:
 ## 📈 Firebase Console
 
 All events can be monitored in the Firebase Analytics console:
+
 1. Go to [Firebase Console](https://console.firebase.google.com/)
 2. Select your project: `cwstory-com`
 3. Navigate to Analytics > Events
@@ -124,17 +135,21 @@ All events can be monitored in the Firebase Analytics console:
 ## 🔧 Implementation Details
 
 ### Core Files
+
 - `src/utils/analytics.js`: Main analytics utilities
 - `src/firebase.js`: Firebase configuration
 - `src/components/AnalyticsDashboard.jsx`: Development dashboard
 
 ### Dependencies
+
 - Firebase SDK v12.3.0
 - Firebase Analytics
 - React hooks for event handling
 
 ### Event Structure
+
 All events follow a consistent structure:
+
 ```javascript
 {
   event_name: 'event_type',
@@ -149,6 +164,7 @@ All events follow a consistent structure:
 ## 🚀 Future Enhancements
 
 Potential tracking improvements:
+
 1. **Scroll Depth**: Track how far users scroll
 2. **Time on Section**: Measure engagement per section
 3. **Device/Browser Analytics**: Enhanced user agent tracking

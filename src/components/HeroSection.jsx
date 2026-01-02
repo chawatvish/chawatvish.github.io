@@ -5,14 +5,14 @@ import authorImg from '../assets/author.jpg'
 
 const HeroSection = () => {
   const scrollToContact = () => {
-    trackButtonClick('cta', 'Contact Me', { 
+    trackButtonClick('cta', 'Contact Me', {
       source: 'hero_section',
       action: 'scroll_to_contact'
-    });
-    
+    })
+
     const contactSection = document.getElementById('contact')
     if (contactSection) {
-      contactSection.scrollIntoView({ 
+      contactSection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       })
@@ -34,10 +34,13 @@ const HeroSection = () => {
           />
         </span>
       </h1>
-      <h2>Mobile and AI Developer</h2>
-      <p>I help ideas become apps with iOS & Flutter, while exploring AI to push boundaries.</p>
+      <h2>Engineering Intelligent Mobile Experiences</h2>
+      <p>
+        Bridging the gap between human creativity and AI efficiency. I craft
+        robust iOS & Flutter applications that tell a story.
+      </p>
       <button onClick={scrollToContact} className="cta-btn">
-        Contact Me
+        Let's Collaborate
       </button>
     </section>
   )
