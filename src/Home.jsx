@@ -40,7 +40,21 @@ const Home = () => {
         </section>
 
         <section id="projects" className="scroll-mt-20">
-          <ProjectsSection />
+          <ProjectsSection
+            sectionId="projects"
+            sectionTitle="Full-Time Projects"
+            subtitle="Projects delivered as part of my full-time engineering roles"
+            category="fulltime"
+          />
+        </section>
+
+        <section id="side-projects" className="scroll-mt-20">
+          <ProjectsSection
+            sectionId="side-projects"
+            sectionTitle="Side Projects"
+            subtitle="Independent studies, academic work, and personal explorations"
+            category="side"
+          />
         </section>
 
         <section id="resume" className="scroll-mt-20">

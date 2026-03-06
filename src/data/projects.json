@@ -1,0 +1,87 @@
+[
+    {
+        "category": "fulltime",
+        "title": "FMS Website",
+        "desc": "Internal financial management web app built with React.js to improve customer service workflows at KBTG.",
+        "fullDesc": "The FMS (Financial Management System) Website is an internal tooling application developed at KBTG in 2025 to improve customer service workflows and financial operation management. I contributed to this project using React.js, marking an expansion into modern web development alongside my primary mobile engineering role.",
+        "highlights": [
+            "Built front-end features using React.js for internal customer service workflows",
+            "Contributed to UI components that improved operational efficiency for KBTG staff"
+        ],
+        "tech": [
+            "React.js",
+            "JavaScript"
+        ],
+        "link": "#",
+        "icon": "💻",
+        "company": "K-Soft Co., Ltd. (KBTG)",
+        "period": "2025",
+        "imgKey": "service1_photo1"
+    },
+    {
+        "category": "fulltime",
+        "title": "K Plus",
+        "desc": "Leading mobile banking app in Thailand with millions of users. Contributed to K Plus TH, K Plus Vietnam, and K Plus Biz Vietnam.",
+        "fullDesc": "K Plus is the flagship mobile banking application of KASIKORN Bank, serving millions of users across Thailand and Vietnam. As a key contributor at K-Soft Co., Ltd. (KBTG), I worked across three variants of the app — K Plus Thailand, K Plus Vietnam, and K Plus Biz Vietnam — while navigating regional challenges in environment, user behavior, and infrastructure.",
+        "highlights": [
+            "Supported Feed, Notification, Tracking Analysis, and Deeplink features for K Plus Thailand",
+            "Addressed regional challenges in K Plus Vietnam: environment, user behavior, and infrastructure",
+            "Contributed to K Plus Biz Vietnam — mobile banking for SMEs to facilitate seamless transactions"
+        ],
+        "tech": [
+            "iOS",
+            "Swift",
+            "Jenkins",
+            "CI/CD"
+        ],
+        "link": "#",
+        "icon": "🏦",
+        "company": "K-Soft Co., Ltd. (KBTG)",
+        "period": "2018 – Present",
+        "imgKey": "thumbnail"
+    },
+    {
+        "category": "side",
+        "title": "K Plus Review Classifier",
+        "desc": "Multi-label text classification model to analyze and categorize K Plus app store customer feedback — Master's independent study.",
+        "fullDesc": "This project is a multi-label text classification system developed as a Master's independent study at Chulalongkorn University. The model analyzes and categorizes K Plus app store customer reviews to surface actionable insights for product teams, demonstrating applied machine learning in a real-world banking context.",
+        "highlights": [
+            "Designed and trained a multi-label classification model on K Plus app store reviews",
+            "Applied data preparation and feature engineering using Pandas and Scikit-learn",
+            "Thesis project for Master of Software Engineering — specialized in data analytics & ML"
+        ],
+        "tech": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "ML"
+        ],
+        "link": "#",
+        "icon": "🤖",
+        "company": "Chulalongkorn University",
+        "period": "2019 – 2021",
+        "imgKey": "icon"
+    },
+    {
+        "category": "fulltime",
+        "title": "TripPointz",
+        "desc": "GPS-based iOS app to discover sightseeing spots, restaurants, and shops. Built from scratch with App Store automation via Fastlane.",
+        "fullDesc": "TripPointz is a location-based iOS application built from the ground up at Samart Digital Media to help users discover sightseeing spots, restaurants, and shops near them. I led the full development cycle from architecture to App Store submission, including implementing an automated deployment pipeline.",
+        "highlights": [
+            "Led development from scratch — architected and built the entire iOS application",
+            "Integrated GPS to enable proximity-based discovery of sightseeing, restaurants, and shops",
+            "Implemented Fastlane pipeline to automate App Store deployments and streamline releases"
+        ],
+        "tech": [
+            "iOS",
+            "Swift",
+            "GPS",
+            "Fastlane"
+        ],
+        "link": "#",
+        "icon": "🗺️",
+        "company": "Samart Digital Media Co., Ltd.",
+        "period": "2017 – 2018",
+        "imgKey": "service1_photo1_card"
+    }
+]
